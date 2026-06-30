@@ -1,0 +1,66 @@
+import { Product } from "./types";
+
+export const dummyProducts: Product[] = [
+  {
+    id: "p1",
+    name: "Kopi Susu Gula Aren 250ml",
+    description:
+      "Kopi susu kekinian dengan gula aren asli, cocok diminum dingin maupun hangat.",
+    price: 18000,
+    stock: 50,
+    storeId: "s1",
+    storeName: "Kedai Jogja Asik",
+    image: "☕",
+  },
+  {
+    id: "p2",
+    name: "Batik Tulis Motif Parang",
+    description:
+      "Kain batik tulis asli Yogyakarta, motif parang klasik, bahan katun premium.",
+    price: 250000,
+    stock: 12,
+    storeId: "s2",
+    storeName: "Batik Malioboro",
+    image: "🧵",
+  },
+  {
+    id: "p3",
+    name: "Bakpia Pathok Isi 20",
+    description: "Oleh-oleh khas Jogja, isi kacang hijau, renyah dan legit.",
+    price: 35000,
+    stock: 80,
+    storeId: "s1",
+    storeName: "Kedai Jogja Asik",
+    image: "🥮",
+  },
+  {
+    id: "p4",
+    name: "Tas Anyaman Rotan",
+    description: "Tas anyaman rotan handmade dari pengrajin lokal Bantul.",
+    price: 120000,
+    stock: 20,
+    storeId: "s3",
+    storeName: "Kriya Bantul",
+    image: "🧺",
+  },
+  {
+    id: "p5",
+    name: "Kaos SEAPEDIA Edition",
+    description: "Kaos cotton combed 30s, desain eksklusif SEAPEDIA.",
+    price: 95000,
+    stock: 40,
+    storeId: "s4",
+    storeName: "Merch Hub",
+    image: "👕",
+  },
+  {
+    id: "p6",
+    name: "Keripik Tempe Pedas",
+    description: "Camilan renyah khas Jogja, level pedas bisa dipilih.",
+    price: 15000,
+    stock: 100,
+    storeId: "s2",
+    storeName: "Batik Malioboro",
+    image: "🌶️",
+  },
+];
