@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-stone-200 bg-white">
@@ -14,17 +16,29 @@ export default function Footer() {
         <div>
           <p className="text-sm font-semibold text-stone-700">Jelajahi</p>
           <ul className="mt-2 space-y-1 text-sm text-stone-500">
-            <li>Katalog Produk</li>
-            <li>Ulasan Aplikasi</li>
-            <li>Gabung Jadi Seller</li>
+            <li>
+              <Link href="/products" className="transition hover:text-brand-600">
+                Katalog Produk
+              </Link>
+            </li>
+            <li>
+              <Link href="/#reviews" className="transition hover:text-brand-600">
+                Ulasan Aplikasi
+              </Link>
+            </li>
+            <li>
+              <Link href="/register" className="transition hover:text-brand-600">
+                Gabung Jadi Seller
+              </Link>
+            </li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <p className="text-sm font-semibold text-stone-700">Status Project</p>
           <p className="mt-2 text-sm text-stone-500">
             Level 1 — Public Marketplace, Authentication &amp; Reviews.
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="border-t border-stone-200 py-4 text-center text-xs text-stone-400">
         © {new Date().getFullYear()} SEAPEDIA. Dibuat untuk COMPFEST 18 Technical
